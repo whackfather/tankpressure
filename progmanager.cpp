@@ -1,23 +1,27 @@
 // Program Manager
 
+// Including necessary libraries
 #include <iostream>
 #include <string>
 using namespace std;
 
+// Definiing functions
 void homescreen();
 void addition();
 void subtraction();
 void multiplication();
 void division();
 
+// Main function
 int main() {
 	cout << "Welcome to the program manager!" << endl;
 	homescreen();
 }
 
+// Homescreen function
 void homescreen() {
 	string selection;
-	string extfunc = "e";
+	const string exitvar = "e";
 	string addition_str = "Addition";
 	string subraction_str = "Subtraction";
 	string multiplication_str = "Multiplication";
@@ -42,7 +46,7 @@ void homescreen() {
 	else if (selection == division_str) {
 		division();
 	}
-	else if (selection == extfunc) {
+	else if (selection == exitvar) {
 		cout << "Exiting program manager.";
 		exit(0);
 	}
@@ -52,15 +56,16 @@ void homescreen() {
 	}
 }
 
+// Addition function
 void addition() {
 	const int looper = 1;
 	while (looper == 1) {
 		cout << "\nAddition. Enter 'e' to exit." << endl;
-		const string extfunc = "e";
+		const string exitvar = "e";
 		string a_st, b_st;
 		float a_fl, b_fl, c_fl;
 		cout << "First number: "; cin >> a_st;
-		if (a_st == extfunc) {
+		if (a_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -73,7 +78,7 @@ void addition() {
 		}
 		a_fl = stof(a_st);
 		cout << "Second number: "; cin >> b_st;
-		if (b_st == extfunc) {
+		if (b_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -90,15 +95,16 @@ void addition() {
 	}
 }
 
+// Subtraction function
 void subtraction() {
 	const int looper = 1;
 	while (looper == 1) {
 		cout << "\nSubtraction. Enter 'e' to exit." << endl;
-		const string extfunc = "e";
+		const string exitvar = "e";
 		string a_st, b_st;
 		float a_fl, b_fl, c_fl;
 		cout << "First number: "; cin >> a_st;
-		if (a_st == extfunc) {
+		if (a_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -111,7 +117,7 @@ void subtraction() {
 		}
 		a_fl = stof(a_st);
 		cout << "Second number: "; cin >> b_st;
-		if (b_st == extfunc) {
+		if (b_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -128,15 +134,16 @@ void subtraction() {
 	}
 }
 
+// Multiplication function
 void multiplication() {
 	const int looper = 1;
 	while (looper == 1) {
 		cout << "\nMultiplication. Enter 'e' to exit." << endl;
-		const string extfunc = "e";
+		const string exitvar = "e";
 		string a_st, b_st;
 		float a_fl, b_fl, c_fl;
 		cout << "First number: "; cin >> a_st;
-		if (a_st == extfunc) {
+		if (a_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -149,7 +156,7 @@ void multiplication() {
 		}
 		a_fl = stof(a_st);
 		cout << "Second number: "; cin >> b_st;
-		if (b_st == extfunc) {
+		if (b_st == exitvar) {
 			cout << "Exiting to homescreen." << endl << endl;
 			homescreen();
 		}
@@ -166,6 +173,7 @@ void multiplication() {
 	}
 }
 
+// Division function
 void division() {
 	const int looper = 1;
 	while (looper == 1) {
