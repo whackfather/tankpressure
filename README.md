@@ -1,1 +1,1 @@
-My CPP dumpster fire.
+The program manager is in progmanager.cpp
