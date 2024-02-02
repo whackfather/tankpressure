@@ -1,6 +1,5 @@
 // Pressure Transducer Voltage Reader
 // v1.0
-// Written by WhackFather
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);  // Setting up LED output
